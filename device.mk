@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024 The LineageOS Project
+# Copyright (C) 2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -382,7 +382,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
