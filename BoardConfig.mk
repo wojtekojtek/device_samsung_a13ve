@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/a32
+DEVICE_PATH := device/samsung/a13ve
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
@@ -29,7 +29,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := a32
+TARGET_BOOTLOADER_BOARD_NAME := a13ve
 TARGET_NO_BOOTLOADER := true
 
 # Boot Image
@@ -68,8 +68,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_a32
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/a32
-TARGET_KERNEL_CONFIG := a32_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/a13ve
+TARGET_KERNEL_CONFIG := a13ve_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 BOARD_KERNEL_IMAGE_NAME := Image.gz
@@ -137,10 +137,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# UDFPS
-TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.a32
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
@@ -184,4 +180,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary files
-include vendor/samsung/a32/BoardConfigVendor.mk
+include vendor/samsung/a13ve/BoardConfigVendor.mk

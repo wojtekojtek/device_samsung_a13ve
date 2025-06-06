@@ -1,4 +1,4 @@
-# Android Device tree for Samsung Galaxy A32 4G - SM-A325F (a32)
+# Android Device tree for Samsung Galaxy A13 4G - SM-A137F (a13ve)
 
 ```
 #

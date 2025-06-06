@@ -9,22 +9,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile.
-$(call inherit-product, device/samsung/a32/device.mk)
+$(call inherit-product, device/samsung/a13ve/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_a32
-PRODUCT_DEVICE := a32
+PRODUCT_NAME := lineage_a13ve
+PRODUCT_DEVICE := a13ve
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A325F
+PRODUCT_MODEL := SM-A137F
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=a32 \
-    PRODUCT_NAME=a32xx \
-    PRIVATE_BUILD_DESC="a32xx-user 13 TP1A.220624.014 A325FXXS7DXA2 release-keys"
+    TARGET_DEVICE=a13ve \
+    PRODUCT_NAME=a13xx \
+    PRIVATE_BUILD_DESC="a13xx-user 13 TP1A.220624.014 A137FXXS8EXJ1 release-keys"
 
 BUILD_FINGERPRINT := samsung/a32xx/a32:13/TP1A.220624.014/A325FXXS7DXA2:user/release-keys
