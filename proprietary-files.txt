@@ -464,10 +464,6 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
-# Bluetooth-AptX
-system/lib/libaptX_encoder.so
-system/lib64/libaptX_encoder.so
-
 # Camera
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64
 vendor/bin/camera_tilt_calibration_info_1_4_default.bin
@@ -1026,7 +1022,7 @@ vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 # LPM
 system/bin/lpm
 system/etc/init/init.sec-charger.rc
-system/lib64/libmaet.so
+system/lib32/libmaet.so
 system/lib64/libshowlogo.so
 system/lib64/libsxqk_skia.so
 system/media/battery_error.spi

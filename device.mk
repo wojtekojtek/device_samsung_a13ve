@@ -325,8 +325,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.6.vendor \
-    secril_config_svc
+    android.hardware.radio@1.6.vendor
 
 # Radio (IMS)
 PRODUCT_BOOT_JARS += \
@@ -372,9 +371,6 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal
-
-PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0.vendor
 
@@ -405,7 +401,6 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.samsung \
     vibrator.default
 
 # VNDK
