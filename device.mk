@@ -436,5 +436,20 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf
 
+# Prebuilt kernel modules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)-kernel/vendor-modules/bt_drv_connac1x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv_connac1x.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/connfem.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/connfem.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/fmradio_drv_mt6631.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv_mt6631.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/trace_mmstat.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/trace_mmstat.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/udc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/udc_lib.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko
+
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a13ve/a13ve-vendor.mk)

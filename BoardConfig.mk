@@ -46,7 +46,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=enforcing
 
 BOARD_MKBOOTIMG_ARGS := --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
@@ -74,7 +74,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
-BOARD_VENDOR_KERNEL_MODULES += $(wildcard $(DEVICE_PATH)-kernel/vendor-modules/*.ko)
+# BOARD_VENDOR_KERNEL_MODULES += $(wildcard $(DEVICE_PATH)-kernel/vendor-modules/*.ko)
 TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Partitions
