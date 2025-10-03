@@ -821,11 +821,9 @@ vendor/bin/test_model.json
 vendor/bin/thermal_manager
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
-vendor/bin/vaultkeeperd
 vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service
 vendor/bin/vendor.samsung.hardware.security.fkeymaster-service
 vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
-vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/bin/volte_rcs_ua
 vendor/bin/vpud
 vendor/bin/wlan_assistant
@@ -892,7 +890,6 @@ vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/etc/init/snap_utility.rc
 vendor/etc/init/teegris_v4.rc
 vendor/etc/init/tetheroffloadservice.rc
-vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
@@ -1074,7 +1071,6 @@ vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
-vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.mediatek.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude_ship.mediatek.xml
@@ -1484,7 +1480,6 @@ vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so
 vendor/lib/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib/vendor.samsung.hardware.security.engmode@1.0.so
 vendor/lib/vendor.samsung.hardware.security.fkeymaster-V1-ndk_platform.so
-vendor/lib/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib/vendor.samsung.hardware.security.widevine.keyprov-V1-ndk_platform.so
 vendor/lib/vendor.samsung.hardware.snap-V1-ndk_platform.so
 vendor/lib/vendor.samsung.hardware.sysinput@1.0.so
