@@ -438,18 +438,12 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt kernel modules
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)-kernel/vendor-modules/bt_drv_connac1x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv_connac1x.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/connfem.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/connfem.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/fmradio_drv_mt6631.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv_mt6631.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/trace_mmstat.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/trace_mmstat.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/udc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/udc_lib.ko \
-    $(LOCAL_PATH)-kernel/vendor-modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko
-
+    $(LOCAL_PATH)-kernel/vendor-modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/mt6357-accdet.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mt6357-accdet.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/mt6359-accdet.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mt6359-accdet.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/tcp_htcp.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/tcp_htcp.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/tcp_westwood.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/tcp_westwood.ko \
+    $(LOCAL_PATH)-kernel/vendor-modules/trace_mmstat.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/trace_mmstat.ko
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a13ve/a13ve-vendor.mk)
