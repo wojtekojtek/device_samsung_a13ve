@@ -279,3 +279,8 @@ ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=0
 ro.vendor.wfd.iframesize.level=0
 vendor.connsys.driver.ready=no
+
+# Debug
+vendor.tzdaemon=Ready
+vendor.tzts_daemon=Ready
+vendor.TEEGRIS.loaded=true
