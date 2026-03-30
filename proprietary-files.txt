@@ -938,6 +938,7 @@ vendor/firmware/txpowerctrl.cfg
 vendor/firmware/wifi.cfg
 
 # Gatekeeper
+vendor/lib/hw/gatekeeper.mt6768.so
 vendor/lib/hw/gatekeeper.mt6769t.so
 vendor/lib64/hw/gatekeeper.mt6769t.so
 
