@@ -436,6 +436,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf
 
+PRODUCT_PACKAGES += \
+    libcurl \
+    libnl
+
+PRODUCT_PACKAGES += \
+    libcurl_32 \
+    libnl_32
+
 # Prebuilt kernel modules
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)-kernel/vendor-modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko \
